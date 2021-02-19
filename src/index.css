@@ -1,13 +1,117 @@
+* {
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  overflow-x: hidden;
+  /* color: white; */
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* background-image: url("./Components/Pics/diego-ph-5LOhydOtTKU-unsplash.jpg"); */
+}
+.navbar {
+  box-shadow: 0 0.5rem 0.5rem #8888;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.myNavItem:hover {
+  border-bottom: 2px solid #889;
+
+  transition: all 0.25s 0.5s ease-in;
+}
+.carousel-item {
+  height: 400px;
+}
+@media screen and (max-width: 550px) {
+  .carousel-item {
+    height: 320px;
+  }
+}
+.carousel-image-1 {
+  background-image: url("./Components/Pics/APDPoster.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.carousel-image-2 {
+  background-image: url("./Components/Pics/APDPoster.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.carousel-image-3 {
+  background-image: url("./Components/Pics/APDPoster.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main {
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  background-color: darkslategray;
+
+  height: 100%;
+  z-index: 2;
+}
+
+#footer {
+  position: relative;
+  background: url("./Components/Pics/footer.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 300px;
+
+  overflow-x: hidden;
+}
+.footer-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0.2, 0.2, 0.8);
+}
+@media screen and (max-width: 750px) {
+  #footer {
+    min-height: 600px;
+  }
+}
+.card-container {
+  position: relative;
+  width: 360px;
+  height: 480px;
+  overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 0.5rem #889;
+}
+.main-card-img {
+  width: 360px;
+  height: 480px;
+  overflow: hidden;
+}
+.main-card-img img {
+  width: 100%;
+  height: 100%;
+}
+.card-content {
+  position: absolute;
+  background-color: darkslategrey;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 480px;
+  z-index: -1;
+  /* overflow: hidden; */
+}
+.main-card-img img:hover {
+  opacity: 0.2;
+  overflow: hidden;
+  transform: scale(2);
+  transition: all 0.25s 0.25s ease-in;
+}
+.logIn {
+  background-image: url("./Components/Pics/diego-ph-5LOhydOtTKU-unsplash.jpg");
+  background-size: cover;
+  min-height: 750px;
+  z-index: -1;
 }
